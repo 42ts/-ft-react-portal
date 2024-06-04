@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "@-ft/react-portal",
+  "version": "0.0.9",
+  "description": "The real React Portal, not a ReactDOM Portal",
+  "types": "./index.d.ts",
+  "main": "./index.js",
+  "scripts": {
+    "build": "rimraf compile dist && tsc -p tsconfig.compile.json && rollup -c && dts-bundle-generator --no-banner -o dist/index.d.ts compile/index.d.ts",
+    "publish": "npm run build && package-json-minifier && cpy README.md dist && cd dist && npm publish"
+  },
+  "author": "Juyeong Maing <mjy9088@naver.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/42ts/-ft-react-portal.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@-ft/use-persist": "^0.1.0",
+    "@-ft/use-rerender": "^0.1.0",
+    "@-ft/watch-target-react": "^0.0.9"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
+    "@types/react": "^18.2.21",
+    "cpy-cli": "^5.0.0",
+    "dts-bundle-generator": "^8.0.1",
+    "package.json-minifier": "^0.0.4",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.28.1",
+    "typescript": "^5.2.2"
+  }
+}
