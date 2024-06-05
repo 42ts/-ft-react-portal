@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@-ft/react-portal",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The real React Portal, not a ReactDOM Portal",
   "types": "./index.d.ts",
   "main": "./index.js",
@@ -16,8 +16,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@-ft/use-persist": "^0.1.0",
-    "@-ft/use-rerender": "^0.1.0",
     "@-ft/watch-target-react": "^0.0.9"
   },
   "peerDependencies": {
