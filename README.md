@@ -5,7 +5,7 @@ Inject React node into any position in React tree.
 ## Usage
 
 ```jsx
-import { usePortal } from '@-ft/react-portal';
+import { usePortal, PortalIn } from '@-ft/react-portal';
 
 function MyPage({ children }) {
   const { append, PortalOut } = usePortal();
